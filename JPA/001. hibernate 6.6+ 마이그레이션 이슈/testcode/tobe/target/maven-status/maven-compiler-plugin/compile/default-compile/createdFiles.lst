@@ -1,0 +1,6 @@
+com/example/tobe/ArticleVersionedRepository.class
+com/example/tobe/Article.class
+com/example/tobe/ArticleVersioned.class
+com/example/tobe/TobeApplication.class
+com/example/tobe/ArticleRepository.class
+com/example/tobe/CustomIdGenerator.class

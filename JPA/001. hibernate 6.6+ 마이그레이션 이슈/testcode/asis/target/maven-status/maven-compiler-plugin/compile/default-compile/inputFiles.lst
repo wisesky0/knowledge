@@ -1,0 +1,6 @@
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/asis/src/main/java/com/example/asis/AsisApplication.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/asis/src/main/java/com/example/asis/CustomIdGenerator.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/asis/src/main/java/com/example/asis/ArticleVersioned.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/asis/src/main/java/com/example/asis/ArticleVersionedRepository.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/asis/src/main/java/com/example/asis/Article.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/asis/src/main/java/com/example/asis/ArticleRepository.java

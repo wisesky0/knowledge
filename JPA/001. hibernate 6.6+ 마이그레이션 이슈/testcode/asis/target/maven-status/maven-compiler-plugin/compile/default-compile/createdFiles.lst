@@ -1,0 +1,6 @@
+com/example/asis/ArticleVersionedRepository.class
+com/example/asis/ArticleVersioned.class
+com/example/asis/Article.class
+com/example/asis/AsisApplication.class
+com/example/asis/ArticleRepository.class
+com/example/asis/CustomIdGenerator.class

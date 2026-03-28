@@ -1,0 +1,16 @@
+[Found 2 @GenericGenerator(strategy=...) annotations]
+
+[1] File: com/example/asis/ArticleVersioned.java
+    Class: ArticleVersioned
+    Line: 17
+    Name: custom-id-versioned
+    Strategy (AS-IS): com.example.asis.CustomIdGenerator
+    TO-BE Migration Hint: Change to type = com.example.asis.CustomIdGenerator.class
+
+[2] File: com/example/asis/Article.java
+    Class: Article
+    Line: 17
+    Name: custom-id
+    Strategy (AS-IS): com.example.asis.CustomIdGenerator
+    TO-BE Migration Hint: Change to type = com.example.asis.CustomIdGenerator.class
+

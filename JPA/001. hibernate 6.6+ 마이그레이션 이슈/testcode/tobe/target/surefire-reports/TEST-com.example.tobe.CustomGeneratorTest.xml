@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.tobe.CustomGeneratorTest" time="2.084" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/test-classes:/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/classes:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.6/spring-boot-starter-data-jpa-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.6/spring-boot-starter-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot/3.5.6/spring-boot-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.6/spring-boot-autoconfigure-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.6/spring-boot-starter-logging-3.5.6.jar:/Users/h2seo/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/Users/h2seo/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/Users/h2seo/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/h2seo/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/h2seo/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/h2seo/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/h2seo/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.6/spring-boot-starter-jdbc-3.5.6.jar:/Users/h2seo/.m2/repository/com/zaxxer/HikariCP/6.3.3/HikariCP-6.3.3.jar:/Users/h2seo/.m2/repository/org/springframework/spring-jdbc/6.2.11/spring-jdbc-6.2.11.jar:/Users/h2seo/.m2/repository/org/hibernate/orm/hibernate-core/6.6.38.Final/hibernate-core-6.6.38.Final.jar:/Users/h2seo/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/h2seo/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/h2seo/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/h2seo/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/h2seo/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/h2seo/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/h2seo/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/h2seo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/h2seo/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/h2seo/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/h2seo/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/h2seo/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/h2seo/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/h2seo/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/h2seo/.m2/repository/org/springframework/data/spring-data-jpa/3.5.4/spring-data-jpa-3.5.4.jar:/Users/h2seo/.m2/repository/org/springframework/data/spring-data-commons/3.5.4/spring-data-commons-3.5.4.jar:/Users/h2seo/.m2/repository/org/springframework/spring-orm/6.2.11/spring-orm-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-context/6.2.11/spring-context-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-expression/6.2.11/spring-expression-6.2.11.jar:/Users/h2seo/.m2/repository/io/micrometer/micrometer-observation/1.15.4/micrometer-observation-1.15.4.jar:/Users/h2seo/.m2/repository/io/micrometer/micrometer-commons/1.15.4/micrometer-commons-1.15.4.jar:/Users/h2seo/.m2/repository/org/springframework/spring-aop/6.2.11/spring-aop-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-tx/6.2.11/spring-tx-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-beans/6.2.11/spring-beans-6.2.11.jar:/Users/h2seo/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/h2seo/.m2/repository/org/springframework/spring-aspects/6.2.11/spring-aspects-6.2.11.jar:/Users/h2seo/.m2/repository/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar:/Users/h2seo/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.5.6/spring-boot-starter-test-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-test/3.5.6/spring-boot-test-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.5.6/spring-boot-test-autoconfigure-3.5.6.jar:/Users/h2seo/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/h2seo/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/h2seo/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/h2seo/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/Users/h2seo/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/Users/h2seo/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/h2seo/.m2/repository/org/assertj/assertj-core/3.27.4/assertj-core-3.27.4.jar:/Users/h2seo/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/h2seo/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/h2seo/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/h2seo/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/h2seo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/h2seo/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/h2seo/.m2/repository/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar:/Users/h2seo/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/Users/h2seo/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/h2seo/.m2/repository/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar:/Users/h2seo/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/h2seo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/h2seo/.m2/repository/org/springframework/spring-core/6.2.11/spring-core-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-jcl/6.2.11/spring-jcl-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-test/6.2.11/spring-test-6.2.11.jar:/Users/h2seo/.m2/repository/org/xmlunit/xmlunit-core/2.10.4/xmlunit-core-2.10.4.jar:/Users/h2seo/.m2/repository/net/ttddyy/datasource-proxy/1.10/datasource-proxy-1.10.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/surefire/surefirebooter-20260328144404935_3.jar /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/surefire 2026-03-28T14-44-04_904-jvmRun1 surefire-20260328144404935_1tmp surefire_0-20260328144404935_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|127.0.0.1:21300|*.127.0.0.1:21300"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/test-classes:/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/classes:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.6/spring-boot-starter-data-jpa-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.6/spring-boot-starter-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot/3.5.6/spring-boot-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.6/spring-boot-autoconfigure-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.6/spring-boot-starter-logging-3.5.6.jar:/Users/h2seo/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/Users/h2seo/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/Users/h2seo/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/h2seo/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/h2seo/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/h2seo/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/h2seo/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.6/spring-boot-starter-jdbc-3.5.6.jar:/Users/h2seo/.m2/repository/com/zaxxer/HikariCP/6.3.3/HikariCP-6.3.3.jar:/Users/h2seo/.m2/repository/org/springframework/spring-jdbc/6.2.11/spring-jdbc-6.2.11.jar:/Users/h2seo/.m2/repository/org/hibernate/orm/hibernate-core/6.6.38.Final/hibernate-core-6.6.38.Final.jar:/Users/h2seo/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/h2seo/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/h2seo/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/h2seo/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/h2seo/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/h2seo/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/h2seo/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/h2seo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/h2seo/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/h2seo/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/h2seo/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/h2seo/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/h2seo/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/h2seo/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/h2seo/.m2/repository/org/springframework/data/spring-data-jpa/3.5.4/spring-data-jpa-3.5.4.jar:/Users/h2seo/.m2/repository/org/springframework/data/spring-data-commons/3.5.4/spring-data-commons-3.5.4.jar:/Users/h2seo/.m2/repository/org/springframework/spring-orm/6.2.11/spring-orm-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-context/6.2.11/spring-context-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-expression/6.2.11/spring-expression-6.2.11.jar:/Users/h2seo/.m2/repository/io/micrometer/micrometer-observation/1.15.4/micrometer-observation-1.15.4.jar:/Users/h2seo/.m2/repository/io/micrometer/micrometer-commons/1.15.4/micrometer-commons-1.15.4.jar:/Users/h2seo/.m2/repository/org/springframework/spring-aop/6.2.11/spring-aop-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-tx/6.2.11/spring-tx-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-beans/6.2.11/spring-beans-6.2.11.jar:/Users/h2seo/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/h2seo/.m2/repository/org/springframework/spring-aspects/6.2.11/spring-aspects-6.2.11.jar:/Users/h2seo/.m2/repository/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar:/Users/h2seo/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.5.6/spring-boot-starter-test-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-test/3.5.6/spring-boot-test-3.5.6.jar:/Users/h2seo/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.5.6/spring-boot-test-autoconfigure-3.5.6.jar:/Users/h2seo/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/h2seo/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/h2seo/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/h2seo/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/Users/h2seo/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/Users/h2seo/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/h2seo/.m2/repository/org/assertj/assertj-core/3.27.4/assertj-core-3.27.4.jar:/Users/h2seo/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/h2seo/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/h2seo/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/h2seo/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/h2seo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/h2seo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/h2seo/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/h2seo/.m2/repository/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar:/Users/h2seo/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/Users/h2seo/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/h2seo/.m2/repository/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar:/Users/h2seo/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/h2seo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/h2seo/.m2/repository/org/springframework/spring-core/6.2.11/spring-core-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-jcl/6.2.11/spring-jcl-6.2.11.jar:/Users/h2seo/.m2/repository/org/springframework/spring-test/6.2.11/spring-test-6.2.11.jar:/Users/h2seo/.m2/repository/org/xmlunit/xmlunit-core/2.10.4/xmlunit-core-2.10.4.jar:/Users/h2seo/.m2/repository/net/ttddyy/datasource-proxy/1.10/datasource-proxy-1.10.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/h2seo"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/target/surefire/surefirebooter-20260328144404935_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|127.0.0.1:21300|*.127.0.0.1:21300"/>
+    <property name="java.runtime.version" value="17.0.18+9-LTS"/>
+    <property name="user.name" value="h2seo"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.18.9.1"/>
+    <property name="localRepository" value="/Users/h2seo/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/yk/y5pdxmfn4fnbx01rhh62p_jm0000gn/T/"/>
+    <property name="com.zaxxer.hikari.pool_number" value="10"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="49048"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/h2seo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.18+9-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|127.0.0.1:21300|*.127.0.0.1:21300"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="tc2_1_버전_직접ID_단건" classname="com.example.tobe.CustomGeneratorTest" time="0.254">
+    <system-out><![CDATA[14:44:05.183 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.tobe.CustomGeneratorTest]: CustomGeneratorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:44:05.223 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.tobe.TobeApplication for test class com.example.tobe.CustomGeneratorTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:05.376+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:05.377+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:05.526+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:05.544+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:05.665+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:05.687+09:00  INFO 49048 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.38.Final
+2026-03-28T14:44:05.699+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:05.795+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:05.806+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-28T14:44:05.874+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:05.875+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-28T14:44:05.900+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@3212d853']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:06.146+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:06.158+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:06.243+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.971 seconds (process running for 1.278)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+[tc2_1] INSERT=1, SELECT=0, executeBatch=1, batchSize=1
+[tc2_1] INSERT=1, SELECT(query)=0
+[tc2_1] JDBC SELECT count: 0
+2026-03-28T14:44:06.494+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    35625 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    3745750 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    692708 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    16790209 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:06.495+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:06.496+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-28T14:44:06.497+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc2_5_버전_직접ID_배치10건" classname="com.example.tobe.CustomGeneratorTest" time="0.009">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:06.509+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:06.509+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:06.535+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:06.538+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:06.562+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:06.563+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:06.567+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:06.567+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-28T14:44:06.568+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:06.568+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-28T14:44:06.568+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@5fee3c9c']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:06.577+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:06.578+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:06.597+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.097 seconds (process running for 1.632)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+[tc2_5] INSERT=10, SELECT=0, executeBatch=1, batchSize=10
+[tc2_5] INSERT=10, SELECT(query)=0
+[tc2_5] executeBatch()횟수=1, batch묶음수=10
+2026-03-28T14:44:06.606+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    23375 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    105333 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    493083 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2437750 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:06.606+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:06.607+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-28T14:44:06.607+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc1_5_직접ID_배치10건" classname="com.example.tobe.CustomGeneratorTest" time="0.025">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:06.615+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:06.615+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:06.636+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:06.639+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:06.657+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:06.658+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:06.660+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:06.660+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-28T14:44:06.661+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn11: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:06.661+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-28T14:44:06.661+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@3d96b8fb']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:06.669+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:06.671+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:06.686+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.078 seconds (process running for 1.721)
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+[tc1_5] INSERT=10, SELECT=10, executeBatch=1, batchSize=10
+[tc1_5] INSERT=10, SELECT(query)=0
+[tc1_5] executeBatch()횟수=1, batch묶음수=10
+2026-03-28T14:44:06.710+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    22042 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    394750 nanoseconds spent preparing 11 JDBC statements;
+    2301918 nanoseconds spent executing 10 JDBC statements;
+    424916 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1453958 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:06.710+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:06.711+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-28T14:44:06.711+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc1_3_자동생성_단건" classname="com.example.tobe.CustomGeneratorTest" time="0.004">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:06.718+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:06.718+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:06.740+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:06.743+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:06.758+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:06.759+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:06.761+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:06.762+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-28T14:44:06.762+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn12: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:06.762+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-28T14:44:06.762+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@620260ad']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:06.770+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:06.771+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:06.785+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.073 seconds (process running for 1.82)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+[tc1_3] INSERT=1, SELECT=0, executeBatch=1, batchSize=1
+[tc1_3] INSERT=1, SELECT(query)=0
+[tc1_3] JDBC SELECT count: 0
+2026-03-28T14:44:06.789+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    22792 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    66667 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    141792 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    811333 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:06.789+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:06.790+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-28T14:44:06.790+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc_dup2_버전_기존ID_중복저장_단건" classname="com.example.tobe.CustomGeneratorTest" time="0.013">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:06.797+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:06.797+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:06.816+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:06.818+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:06.833+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:06.834+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:06.836+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:06.836+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-28T14:44:06.837+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn13: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:06.837+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-28T14:44:06.837+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@13231e7b']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:06.844+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:06.845+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:06.861+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.07 seconds (process running for 1.896)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+2026-03-28T14:44:06.865+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    24250 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    116125 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    217000 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1046791 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+2026-03-28T14:44:06.869+09:00  INFO 49048 --- [           main] org.hibernate.orm.jdbc.batch             : HHH100503: On release of batch it still contained JDBC statements
+2026-03-28T14:44:06.870+09:00  WARN 49048 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2026-03-28T14:44:06.870+09:00 ERROR 49048 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_7 ON PUBLIC.ARTICLE_VERSIONED(ID) VALUES ( /* 1 */ 'VERSIONED-001' )"; SQL statement:
+insert into article_versioned (content,title,version,id) values (?,?,?,?) [23505-232]
+2026-03-28T14:44:06.871+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    19041 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    134833 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    1985542 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3162917 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[tc_dup2] INSERT=1, SELECT=0, executeBatch=1, batchSize=1
+[tc_dup2] SELECT(query)=0
+2026-03-28T14:44:06.873+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:06.873+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-28T14:44:06.873+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc_dup1_기존ID_중복저장_단건" classname="com.example.tobe.CustomGeneratorTest" time="0.018">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:06.880+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:06.880+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:06.900+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:06.902+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:06.916+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:06.917+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:06.919+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:06.919+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-03-28T14:44:06.919+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn14: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:06.919+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-03-28T14:44:06.920+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@24c94e95']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:06.926+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:06.927+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:06.938+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.064 seconds (process running for 1.973)
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+2026-03-28T14:44:06.942+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    17083 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    166833 nanoseconds spent preparing 2 JDBC statements;
+    88709 nanoseconds spent executing 1 JDBC statements;
+    81000 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    298792 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    update
+        article 
+    set
+        content=?,
+        title=? 
+    where
+        id=?
+2026-03-28T14:44:06.950+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    11708 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    828916 nanoseconds spent preparing 2 JDBC statements;
+    71333 nanoseconds spent executing 1 JDBC statements;
+    241959 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3709458 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[tc_dup1] INSERT=0, SELECT=1, executeBatch=1, batchSize=1
+[tc_dup1] SELECT(query)=0, entityLoad=1, INSERT=0, UPDATE=1
+2026-03-28T14:44:06.956+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:06.957+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-03-28T14:44:06.957+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc2_3_버전_자동생성_단건" classname="com.example.tobe.CustomGeneratorTest" time="0.004">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:06.965+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:06.965+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:06.982+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:06.985+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:06.997+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:06.998+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:07.000+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:07.000+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-03-28T14:44:07.000+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn15: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:07.001+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-03-28T14:44:07.001+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@266b7d1']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:07.008+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:07.009+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:07.020+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.061 seconds (process running for 2.055)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+[tc2_3] INSERT=1, SELECT=0, executeBatch=1, batchSize=1
+[tc2_3] INSERT=1, SELECT(query)=0
+[tc2_3] JDBC SELECT count: 0
+2026-03-28T14:44:07.024+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    25666 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    84667 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    100000 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    635000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:07.024+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:07.025+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-03-28T14:44:07.025+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc1_1_직접ID_단건" classname="com.example.tobe.CustomGeneratorTest" time="0.004">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:07.032+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:07.032+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:07.048+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:07.050+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:07.064+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:07.064+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:07.066+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:07.067+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-03-28T14:44:07.067+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn16: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:07.067+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-03-28T14:44:07.067+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@57a259c1']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:07.074+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:07.076+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:07.087+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.061 seconds (process running for 2.122)
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+[tc1_1] INSERT=1, SELECT=1, executeBatch=1, batchSize=1
+[tc1_1] INSERT=1, SELECT(query)=0
+[tc1_1] JDBC SELECT count: 1
+2026-03-28T14:44:07.091+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    21083 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    165791 nanoseconds spent preparing 2 JDBC statements;
+    86875 nanoseconds spent executing 1 JDBC statements;
+    73625 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    289500 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:07.091+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:07.091+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-03-28T14:44:07.092+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc1_6_자동생성_배치10건" classname="com.example.tobe.CustomGeneratorTest" time="0.005">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:07.098+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:07.098+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:07.114+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:07.116+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:07.128+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:07.128+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:07.130+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:07.130+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-03-28T14:44:07.131+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn17: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:07.131+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-03-28T14:44:07.131+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@2978d342']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:07.137+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:07.138+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:07.150+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.058 seconds (process running for 2.185)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (content, title, id) 
+    values
+        (?, ?, ?)
+[tc1_6] INSERT=10, SELECT=0, executeBatch=1, batchSize=10
+[tc1_6] INSERT=10, SELECT(query)=0
+[tc1_6] executeBatch()횟수=1, batch묶음수=10
+2026-03-28T14:44:07.154+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    22000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    70917 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    325084 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1287334 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:07.154+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:07.155+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-03-28T14:44:07.155+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="tc2_6_버전_자동생성_배치10건" classname="com.example.tobe.CustomGeneratorTest" time="0.005">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-03-28T14:44:07.161+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Starting CustomGeneratorTest using Java 17.0.18 with PID 49048 (started by h2seo in /Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe)
+2026-03-28T14:44:07.161+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:44:07.178+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28T14:44:07.181+09:00  INFO 49048 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-03-28T14:44:07.193+09:00  INFO 49048 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-28T14:44:07.193+09:00  INFO 49048 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-28T14:44:07.195+09:00  INFO 49048 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28T14:44:07.195+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-03-28T14:44:07.196+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn18: url=jdbc:h2:mem:testdb user=SA
+2026-03-28T14:44:07.196+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-03-28T14:44:07.196+09:00  INFO 49048 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@55882ff2']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28T14:44:07.203+09:00  INFO 49048 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+Hibernate: 
+    create table article (
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table article_versioned (
+        version bigint,
+        id varchar(50) not null,
+        content varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2026-03-28T14:44:07.204+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28T14:44:07.215+09:00  INFO 49048 --- [           main] com.example.tobe.CustomGeneratorTest     : Started CustomGeneratorTest in 0.059 seconds (process running for 2.25)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article_versioned
+        (content, title, version, id) 
+    values
+        (?, ?, ?, ?)
+[tc2_6] INSERT=10, SELECT=0, executeBatch=1, batchSize=10
+[tc2_6] INSERT=10, SELECT(query)=0
+[tc2_6] executeBatch()횟수=1, batch묶음수=10
+2026-03-28T14:44:07.219+09:00  INFO 49048 --- [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    19209 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    70083 nanoseconds spent preparing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    276334 nanoseconds spent executing 1 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1406041 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-03-28T14:44:07.220+09:00  INFO 49048 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists article_versioned cascade 
+2026-03-28T14:44:07.220+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-03-28T14:44:07.220+09:00  INFO 49048 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+]]></system-out>
+  </testcase>
+</testsuite>

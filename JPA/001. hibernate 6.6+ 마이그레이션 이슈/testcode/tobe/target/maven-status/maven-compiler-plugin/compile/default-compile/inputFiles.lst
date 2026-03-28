@@ -1,0 +1,6 @@
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/src/main/java/com/example/tobe/Article.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/src/main/java/com/example/tobe/ArticleRepository.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/src/main/java/com/example/tobe/ArticleVersioned.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/src/main/java/com/example/tobe/ArticleVersionedRepository.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/src/main/java/com/example/tobe/CustomIdGenerator.java
+/Users/h2seo/codespace/knowldege/JPA/001. hibernate 6.6+ 마이그레이션 이슈/testcode/tobe/src/main/java/com/example/tobe/TobeApplication.java

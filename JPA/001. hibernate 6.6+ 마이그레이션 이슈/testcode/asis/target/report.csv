@@ -1,0 +1,3 @@
+File,Class,Line,Name,Strategy
+com/example/asis/ArticleVersioned.java,ArticleVersioned,17,custom-id-versioned,com.example.asis.CustomIdGenerator
+com/example/asis/Article.java,Article,17,custom-id,com.example.asis.CustomIdGenerator
