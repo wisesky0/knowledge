@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -401,6 +402,65 @@ class CustomGeneratorTest {
         assertThat(TestDataSourceConfig.BATCH_LISTENER.getSelectCount())
             .as("TO-BE @Version 있음: JDBC 레벨 SELECT 없음 (SELECT=0)")
             .isEqualTo(0);
+    }
+
+    @Test
+    @DisplayName("tc_opt1_낙관적잠금_버전충돌: 동일 엔티티를 두 트랜잭션이 각각 조회 후 수정 시 나중 커밋에서 ObjectOptimisticLockingFailureException 발생")
+    void tc_opt1_낙관적잠금_버전충돌() {
+        // 1. 초기 데이터 저장 (version=0)
+        transactionTemplate.execute(status -> {
+            ArticleVersioned article = new ArticleVersioned("OPT-001", "원본제목", "원본내용");
+            articleVersionedRepository.save(article);
+            return null;
+        });
+
+        // 2. Tx-A: 조회 후 detach → stale 스냅샷(version=0) 획득
+        ArticleVersioned staleSnapshot = transactionTemplate.execute(status -> {
+            ArticleVersioned found = articleVersionedRepository.findById("OPT-001").orElseThrow();
+            entityManager.detach(found);
+            return found;
+        });
+
+        // 3. Tx-B: 먼저 UPDATE 커밋 → version: 0 → 1
+        transactionTemplate.execute(status -> {
+            ArticleVersioned fresh = articleVersionedRepository.findById("OPT-001").orElseThrow();
+            fresh.setTitle("Tx-B가 먼저 수정");
+            articleVersionedRepository.save(fresh);
+            return null;
+        });
+
+        stats.clear();
+        TestDataSourceConfig.BATCH_LISTENER.reset();
+
+        // 4. Tx-A: stale 스냅샷(version=0)으로 UPDATE 시도 → version=1인 row에 WHERE version=0 → 0 rows updated
+        //    → OptimisticLockingFailureException 발생해야 함
+        Exception thrown = assertThrows(OptimisticLockingFailureException.class, () ->
+            transactionTemplate.execute(status -> {
+                staleSnapshot.setTitle("Tx-A가 뒤늦게 수정");
+                articleVersionedRepository.save(staleSnapshot); // merge → UPDATE WHERE version=0 → 실패
+                return null;
+            })
+        );
+        System.out.println("[tc_opt1][TO-BE] 실제 예외 클래스: " + thrown.getClass().getName());
+        System.out.println("[tc_opt1][TO-BE] 원인 예외 클래스: " + (thrown.getCause() != null ? thrown.getCause().getClass().getName() : "null"));
+
+        System.out.printf("[tc_opt1] INSERT=%d, UPDATE=%d, SELECT=%d%n",
+            stats.getEntityInsertCount(),
+            stats.getEntityUpdateCount(),
+            TestDataSourceConfig.BATCH_LISTENER.getSelectCount()
+        );
+
+        // DB 확인: Tx-B의 수정만 반영되어 있어야 함
+        transactionTemplate.execute(status -> {
+            ArticleVersioned result = articleVersionedRepository.findById("OPT-001").orElseThrow();
+            assertThat(result.getTitle())
+                .as("Tx-B 수정만 반영, Tx-A 수정은 유실되어야 함")
+                .isEqualTo("Tx-B가 먼저 수정");
+            assertThat(result.getVersion())
+                .as("version은 Tx-B 커밋 후 1이어야 함")
+                .isEqualTo(1L);
+            return null;
+        });
     }
 
     @Test

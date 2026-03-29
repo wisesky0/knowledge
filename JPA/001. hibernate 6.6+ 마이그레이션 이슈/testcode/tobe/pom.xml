@@ -13,7 +13,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>hibernate-migration-tobe</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>TO-BE: Spring Boot 3.5.6 / Hibernate 6.6.38</name>
 
     <properties>

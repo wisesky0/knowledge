@@ -13,7 +13,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>hibernate-migration-asis</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>AS-IS: Spring Boot 2.3.3 / Hibernate 5.4.17</name>
 
     <properties>

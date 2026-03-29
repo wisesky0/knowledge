@@ -239,3 +239,27 @@ AS-IS, TO-BE 모두 동일한 결과.
 - AS-IS / TO-BE (적용 후) 동작 완전 일치
 - `allowAssignedIdentifiers=true` 는 Hibernate Generator 내부 설정이며 중복 ID 방어와 무관. 중복 ID 방어는 DB PK 제약에 의존함.
 
+---
+
+### 낙관적 잠금(Optimistic Locking) 동작 검증
+
+`@Version` 본연의 기능인 동시 수정 감지가 AS-IS / TO-BE에서 동일하게 동작하는지 검증함.
+
+#### 시나리오 (tc_opt1)
+
+1. `OPT-001` 저장 (version=0)
+2. **Tx-A**: 조회 후 `detach` → stale 스냅샷(version=0) 확보
+3. **Tx-B**: 먼저 UPDATE 커밋 → version: 0 → 1
+4. **Tx-A**: stale 스냅샷(version=0)으로 `save()` 시도 → `WHERE version=0` 조건 불일치 → 0 rows updated
+
+#### 결과
+
+| 항목 | AS-IS (Hibernate 5.4.17) | TO-BE (Hibernate 6.6.38) |
+|------|--------------------------|--------------------------|
+| 발생 예외 | `org.springframework.orm.ObjectOptimisticLockingFailureException` | `org.springframework.orm.ObjectOptimisticLockingFailureException` |
+| 원인 예외 | `org.hibernate.StaleObjectStateException` | `org.hibernate.StaleObjectStateException` |
+| DB 최종 상태 | Tx-B 수정만 반영, version=1 | Tx-B 수정만 반영, version=1 |
+| 테스트 결과 | ✅ PASS | ✅ PASS |
+
+**결론:** `@Version` 낙관적 잠금 예외 경로(`StaleObjectStateException` → `ObjectOptimisticLockingFailureException`)는 Hibernate 6.6 마이그레이션 영향을 받지 않는다. AS-IS / TO-BE 완전 동일.
+
